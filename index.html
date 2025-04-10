@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Verde Sabor</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f3fdf3;
+            color: #333;
+        }
+
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #4caf50;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1601924582975-7d4b4d8d09a3');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #c8e6c9;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pizzaria Verde Sabor</h1>
+        <p>A melhor pizza com o sabor da natureza!</p>
+    </header>
+
+    <nav>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Bem-vindo à sua pizzaria favorita 🍕</h1>
+    </div>
+
+    <section id="cardapio" class="content">
+        <h2>Nosso Cardápio</h2>
+
+        <!-- Categoria: Tradicionais -->
+        <h3>Tradicionais</h3>
+        <div class="card">
+            <h4>Pizza Margherita</h4>
+            <p>Molho de tomate, mussarela, manjericão fresco e azeite extra virgem.</p>
+            <p><strong>Preço:</strong> R$ 29,90</p>
+        </div>
+        <div class="card">
+            <h4>Pizza Calabresa</h4>
+            <p>Calabresa, cebola, azeitonas e molho especial.</p>
+            <p><strong>Preço:</strong> R$ 34,90</p>
+        </div>
+        <div class="card">
+            <h4>Pizza Portuguesa</h4>
+            <p>Presunto, ovos, cebola, azeitonas e queijo mussarela.</p>
+            <p><strong>Preço:</strong> R$ 37,90</p>
+        </div>
+
+        <!-- Categoria: Especiais -->
+        <h3>Especiais</h3>
+        <div class="card">
+            <h4>Pizza Verde Sabor</h4>
+            <p>Especial da casa: rúcula, tomate seco, mussarela de búfala e pesto.</p>
+            <p><strong>Preço:</strong> R$ 39,90</p>
+        </div>
+        <div class="card">
+            <h4>Pizza 4 Queijos</h4>
+            <p>Mussarela, provolone, gorgonzola e parmesão.</p>
+            <p><strong>Preço:</strong> R$ 42,90</p>
+        </div>
+        <div class="card">
+            <h4>Pizza de Camarão</h4>
+            <p>Camarões grelhados, catupiry, alho e ervas finas.</p>
+            <p><strong>Preço:</strong> R$ 47,90</p>
+        </div>
+
+        <!-- Categoria: Veganas -->
+        <h3>Veganas</h3>
+        <div class="card">
+            <h4>Pizza Marguerita Vegana</h4>
+            <p>Molho de tomate, queijo vegano, manjericão fresco e azeite de oliva.</p>
+            <p><strong>Preço:</strong> R$ 32,90</p>
+        </div>
+        <div class="card">
+            <h4>Pizza Vegetariana</h4>
+            <p>Tomate, pimentão, cebola, azeitona, milho e orégano.</p>
+            <p><strong>Preço:</strong> R$ 31,90</p>
+        </div>
+        <div class="card">
+            <h4>Pizza de Abobrinha com Alho</h4>
+            <p>Abobrinha grelhada, alho, tomate e queijo mussarela.</p>
+            <p><strong>Preço:</strong> R$ 34,90</p>
+        </div>
+    </section>
+     
+    <section>
+        <h3 class="center-title">Bebidas</h3>
+        <div class="card">
+            <!-- Bebida 1 -->
+            <div class="card">
+                <h4>Refrigerante 350ml</h4>
+                <p>Coca-Cola, Guaraná Antártica, Fanta Laranja ou Sprite.</p>
+                <p><strong>Preço:</strong> R$ 5,90</p>
+            </div>
+            <!-- Bebida 2 -->
+            <div class="card">
+                <h4>Suco Natural</h4>
+                <p>Laranja, limão, maracujá ou abacaxi.</p>
+                <p><strong>Preço:</strong> R$ 7,90</p>
+            </div>
+            <!-- Bebida 3 -->
+            <div class="card">
+                <h4>Água Mineral</h4>
+                <p>Com ou sem gás.</p>
+                <p><strong>Preço:</strong> R$ 3,90</p>
+            </div>
+            <!-- Bebida 4 -->
+            <div class="card">
+                <h4>Chá Gelado</h4>
+                <p>Limão, pêssego ou hibisco.</p>
+                <p><strong>Preço:</strong> R$ 6,90</p>
+            </div>
+            <!-- Bebida 5 -->
+            <div class="card">
+                <h4>Cerveja Artesanal</h4>
+                <p>Opções de IPA, Lager ou Weiss.</p>
+                <p><strong>Preço:</strong> R$ 12,90</p>
+            </div>
+            <!-- Bebida 6 -->
+            <div class="card">
+                <h4>Vinho Tinto (Taça)</h4>
+                <p>Vinho seco ou suave.</p>
+                <p><strong>Preço:</strong> R$ 15,90</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="content">
+        <h2>Sobre Nós</h2>
+        <p>Somos apaixonados por pizza e sustentabilidade. Utilizamos ingredientes frescos e orgânicos sempre que possível, garantindo sabor e cuidado com o planeta.</p>
+    </section>
+
+    <section id="contato" class="content">
+        <h2>Contato</h2>
+        <p>📞 (11) 98765-4321</p>
+        <p>📍 Rua das Pizzas, 123 - São Paulo, SP</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pizzaria Verde Sabor. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+    
+</body>
+</html>

@@ -1,0 +1,147 @@
+/* Reset básico para evitar problemas com o estilo padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3fdf3; /* Cor de fundo suave */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2e7d32; /* Verde escuro */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Menu de navegação */
+nav {
+    background-color: #4caf50; /* Verde claro */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Hero */
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1601924582975-7d4b4d8d09a3'); /* Foto de pizza */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.hero h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Seções principais */
+.content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+/* Cartões do cardápio */
+.card {
+    background-color: white;
+    border: 1px solid #c8e6c9; /* Verde claro suave */
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #e8f5e9; /* Verde claro no hover */
+}
+
+.card h3 {
+    color: #2e7d32;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Destaque para o card selecionado */
+.highlight {
+    background-color: #a5d6a7;
+    transition: background-color 0.5s;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2e7d32; /* Verde escuro */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+.center-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
